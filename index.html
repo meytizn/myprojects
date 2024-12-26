@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahdizamanian</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/imageSlider.css" rel="stylesheet" />
   </head>
+  
 
   <style>
     body {
@@ -31,15 +33,15 @@
     " id="navbar" >
       
 
-      <div class="flex-col w-[100%] h-[230px] justify-center justify-items-center my-5 
+      <div class="flex-col w-[100%] h-[230px]  my-5 item-center
       md:w-[30%] md:bg-green-620">
-        <img class="flex-col  w-[35%] rounded-[50%] md:w-[70%]" src="mehdizamanian.jpg"></img>
+        <img class=" w-[100%] rounded-[50%] md:w-[70%]" src="mehdizamanian.jpg"></img>
       </div>
 
 
 
       <div class="flex flex-col my-5 md:my-0  bg-red-652 w-[100%] w-[100%] md:w-[70%] md:bg-green-620 justify-center items-center gap-3">
-        <div class=" w-[100%] md:rounded-[10px] md:w-[80%]"><h1 class="text-white text-center text-[30px] text-bold font-bold md:text-start  md:text-[20px] md:text-[50px]  ">FULL-STACK WEB DEVELOPER</h1></div>
+        <div class=" w-[100%] md:rounded-[10px] md:w-[80%]"><h1 class="text-white text-center text-[20px] text-bold font-bold md:text-start  md:text-[20px] md:text-[50px]  ">FULL-STACK WEB DEVELOPER</h1></div>
         <!--<div class=" w-[80%] bg-white rounded-[10px] md:w-[80%]"><h1 class="text-start px-[17%] md:text-[20px] md:text-[50px] text-black ">Hello , this is my official page </h1></div>-->
       </div>
 
@@ -52,7 +54,7 @@
 
 
 
-    <div class="flex flex-col justify-center items-center md:items-end bg-black-500 w-[100%] h-[220px]  text-center flex justify-end ">
+    <div class="my-[30px] flex flex-col justify-center items-center md:items-end bg-black-500 w-[100%] h-[220px]  text-center flex justify-end ">
       
           <h1 class="w-[88%] md:w-[70%] md:pr-[30px]">  
             Full-Stack developer familiar with the backend and frontend in designing and implementing web-based software and various services, I am interested in improving my knowledge and skills in the field of information technology and looking for challenging opportunities in a leading company to help grow and develop innovative products. I am committed to creating creative solutions and improving software development processes.
@@ -62,8 +64,8 @@
 
 
     <div class="  w-[100%] h-[50px] text-center my-5 relative ">
-        <h1 class="text-[30px]">Java Script Projects </h1>
-        <img class="w-[50px] absolute top-[0px] left-[10%]" src="images/javascript.png"/>
+        <h1 class="text-[25px]">Java Script Projects </h1>
+        <img class="w-[50px] absolute top-[0px] left-[0%]" src="images/javascript.png"/>
     </div>
 
 
@@ -71,9 +73,9 @@
     md:flex-row  md:justify-center md:items-start md:flex-wrap md:content-center md:gap-y-0 md:pt-3 md:gap-x-3 md:gap-y-2 md:items-center md:h-[250px] "><br/>
         <div id="themchanger" class="w-[80%] bg-green-500 h-[60px] lg:w-[20%]">1 - them Changer</div>
         <div id="guessnumber" class="w-[80%] bg-green-500 h-[60px] lg:w-[20%]">2-guessNumber</div>
-        <div id="qoutesReaders" class="w-[80%] bg-green-500 h-[60px] lg:w-[20%]">qoutesReaders</div>
-        <div class="w-[80%] bg-green-500 h-[60px] lg:w-[20%]">04</div>
-        <div class="w-[80%] bg-green-500 h-[60px] lg:w-[20%]">05</div>
+        <div id="qoutesReaders" class="w-[80%] bg-green-500 h-[60px] lg:w-[20%]">3-qoutesReaders</div>
+        <div onclick="messageprinter()" id="messageprinter" class="w-[80%] bg-green-500 h-[60px] lg:w-[20%]">4-messagePrinter</div>
+        <div class="w-[80%] bg-green-500 h-[60px] lg:w-[20%]">5- imageSlider </div>
         <div class="w-[80%] bg-green-500 h-[60px] lg:w-[20%]">06</div>
     </div>
 
@@ -85,8 +87,8 @@
     <!--wordpress-->
 
     <div class=" w-[100%] h-[50px] text-center my-10 relative ">
-      <h1 class="text-[30px]">Wordpress Projects </h1>
-      <img class="w-[50px] absolute top-[0px] left-[10%]" src="images/wordpress.png"/>
+      <h1 class="text-[25px] ">Wordpress Projects </h1>
+      <img class="w-[50px] absolute top-[0px] left-[0%]" src="images/wordpress.png"/>
   </div>
 
 
@@ -103,13 +105,34 @@
 
 
 
+<br/><br/><br/><br/>
+  <div class="w-[80%] md:w-[50%] m-auto">
+    
+     <div class="slide active"><img class="w-[100%] h-[300px]" id='mage' src="images/1.jpg"/><div>
 
-  <br/></br><br/></br><br/>
+      <button class="text-red text-[20px] float-left" id="prev" onclick="prevfunc()">previous</button>
+      <button class="text-red text-[20px] float-right" id="next" onclick="nextfunc()">next</button>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <footer>
 
-  <div class=" my-[-40px] flex flex-col items-center  bg-slate-800 w-[100%] h-[100px] flex-wrap content-center  text-center rounded
-   "><br/>
+  <div class=" my-[-40px] flex flex-col items-center  bg-slate-800 w-[100%] h-[100px] flex-wrap content-center  text-center rounded"><br/>
       
       <div class="w-[100%]"><a class="text-white font-bold text-[30px]" href="https://zamanianmehdi23blogproject.pythonanywhere.com/#">Backend Applications</a></div>
 
@@ -123,7 +146,8 @@
     <script src="js/1-themChanger.js"></script>
     <script src="js/2-guessNumber.js"></script>
     <script src="js/3-qoutesReaders.js"></script>
-
+    <script src="js/4-messageprinter.js"></script>
+    <script src="js/5-sliderImage.js"></script>
 
   </body>
 </html>

@@ -7,7 +7,7 @@ position: relative;
 
 /* animation by below */
 position: fixed;
-bottom: -49%;
+bottom: -55%;
 transition: all .5s ease;
 z-index: 1;
 

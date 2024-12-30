@@ -225,7 +225,7 @@ function get_fetch(){
 const js_item = document.getElementById('js_item') 
 js_item.addEventListener('click',()=>{
   const new_div = document.createElement('div')
-  new_div.setAttribute('class','w-[100%] h-[350px] fixed top-0 transition-all')
+  new_div.setAttribute('class','w-[100%] h-[350px] bg-[#0049B7] fixed top-0 transition-all')
   document.body.appendChild(new_div)
   get_fetch()
 

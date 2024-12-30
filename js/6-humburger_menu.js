@@ -20,7 +20,7 @@ humburger_menu.addEventListener('click', () => {
     humburger_menu.src="images/bar.png";
 
         const menutopdiv=document.getElementById("menutopdiv")
-    menutopdiv.style.backgroundColor="white"
+    menutopdiv.style.backgroundColor="#0049B7"
 
     counter=0
 

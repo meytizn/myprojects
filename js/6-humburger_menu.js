@@ -11,7 +11,7 @@ humburger_menu.addEventListener('click', () => {
     humburger_menu.src="images/close.png";
 
     const menutopdiv=document.getElementById("menutopdiv")
-    menutopdiv.style.backgroundColor="#111827"
+    menutopdiv.style.backgroundColor="#0049B7"
     
     
   }

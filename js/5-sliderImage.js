@@ -54,7 +54,7 @@ function nextfunc() {
     n++;
     image.src = image_list[n].src
   }
-  console.log(n);
+  // console.log(n);
 }
 
 

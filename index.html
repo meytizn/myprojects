@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahdizamanian</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="theme-color" content="#0049B7" />
+    <meta id="metacolor" name="theme-color" content="#0049B7" />
     <link href="css/imageSlider.css" rel="stylesheet" />
     <link href="css/humburger_menu.css" rel="stylesheet" />
     
@@ -28,7 +28,7 @@
 <div class="flex flex-col  w-[100%] h-[410px] md:flex-row md:justify-center md:my-[50px] ">
 
 
-  <div class="bg-[#0049B7] md:bg-white w-[100%] h-[290px] flex-col justify-center items-center justify-items-center py-4 md:w-[30%] md:h-[610px]"><img class="w-[280px] h-[250px] rounded-[50%] mx-auto md:w-[55%] md:h-[250px] md:mx-auto" src="mehdizamanian.jpg"/> </div>
+  <div id="navbar_first" class="bg-[#0049B7] md:bg-white w-[100%] h-[290px] flex-col justify-center items-center justify-items-center py-4 md:w-[30%] md:h-[610px]"><img class="w-[280px] h-[250px] rounded-[50%] mx-auto md:w-[55%] md:h-[250px] md:mx-auto" src="mehdizamanian.jpg"/> </div>
   
   
 
@@ -40,7 +40,7 @@
      
     </div>
  
-        <div class="flex flex-col h-[420px] bg-[#0049B7] w-[100%] py-8 px-3 ">
+        <div id="navbar_second" class="flex flex-col h-[420px] bg-[#0049B7] w-[100%] py-8 px-3 ">
       <p class="text-[15px] text-bold font-bold text-white ">Hello , welcome to my site </p> 
       <p class="text-[15px] text-bold font-bold text-white py-5">Im a Full-Stack developer familiar with the frontend and backend in designing and implementing web-based software and various services, I am interested in improving my knowledge and skills in the field of information technology and looking for challenging opportunities in a leading company to help grow and develop innovative products. I am committed to creating creative solutions and improving software development processes.</p> 
     </div>
@@ -63,7 +63,7 @@
 
 
 
-<div style="background-color:#0049B7;" id="menutopdiv" class=" w-[100%] h-[45px] bg-[#0049B7]  text-center flex justify-center items-center  fixed bottom-0 z-10
+<div id="menutopdiv" class=" w-[100%] h-[45px] bg-[#0049B7]  text-center flex justify-center items-center  fixed bottom-0 z-10
 md:w-[50px] md:top-[0px] md:right-[20px]
 ">
   <img class="w-[40px]" id="humburger_menu" src="images/bar.png"/>
@@ -112,7 +112,7 @@ md:w-[50px] md:top-[0px] md:right-[20px]
 
     <div class=" my-[-20px] flex flex-col items-center  bg-[#EFD81D] w-[100%] h-[500px] pt-3 flex-wrap content-center gap-y-3 text-center rounded
     md:flex-row  md:justify-center md:items-start md:flex-wrap md:content-center md:gap-y-0 md:pt-3 md:gap-x-3 md:gap-y-2 md:items-center md:h-[250px] "><br/>
-        <div id="themchanger" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">1 - them Changer</div>
+        <div onclick="themchanger()"  class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">1 - them Changer</div>
         <div id="guessnumber" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">2-guessNumber</div>
         <div id="qoutesReaders" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">3-qoutesReaders</div>
         <div onclick="messageprinter()" id="messageprinter" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">4-messagePrinter</div>

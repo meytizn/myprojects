@@ -110,14 +110,21 @@ md:w-[50px] md:top-[0px] md:right-[20px]
     </div>
 
 
-    <div class=" my-[-20px] flex flex-col items-center  bg-[#EFD81D] w-[100%] h-[500px] pt-3 flex-wrap content-center gap-y-3 text-center rounded
+    <div class=" my-[-20px] flex flex-col items-center  bg-[#EFD81D] w-[100%]  pt-3 flex-wrap content-center gap-y-3 text-center rounded items-center
     md:flex-row  md:justify-center md:items-start md:flex-wrap md:content-center md:gap-y-0 md:pt-3 md:gap-x-3 md:gap-y-2 md:items-center md:h-[250px] "><br/>
-        <div onclick="themchanger()"  class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">1 - them Changer</div>
-        <div id="guessnumber" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">2-guessNumber</div>
-        <div id="qoutesReaders" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">3-qoutesReaders</div>
-        <div onclick="messageprinter()" id="messageprinter" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">4-messagePrinter</div>
-        <div class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">5- imageSlider </div>
-        <div id="js_item" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7]">6- fetchApi </div>
+        <div onclick="themchanger()"  class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7] pt-3 rounded">1 - them Changer</div>
+        <div id="guessnumber" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7] pt-3 rounded">2-guessNumber</div>
+        <div id="qoutesReaders" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7] pt-3 rounded">3-qoutesReaders</div>
+        <div onclick="messageprinter()" id="messageprinter" class="w-[80%] bg-white h-[60px] pt-3 lg:w-[20%] rounded text-[#0049B7]">4-messagePrinter</div>
+        <div class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7] pt-3 rounded">5- imageSlider </div>
+        <div class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7] pt-3 rounded">6- hamburgerMenu </div>
+        <div id="js_item" class="w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7] pt-3 rounded">7- fetchApi </div>
+
+        <div id="calculator" onclick="calculator()" class="js_downer transition-all w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7] pt-3 rounded">8- calculator </div>
+
+        <div id="basket" onclick="local_storage_func()" class="relative w-[80%] bg-white h-[60px] lg:w-[20%] text-[#0049B7] pt-3 rounded">9-localStorage <p id="text_ls"></p> </div>
+
+        <br/>
     </div>
 
 
@@ -192,6 +199,8 @@ md:w-[50px] md:top-[0px] md:right-[20px]
     <script src="js/5-sliderImage.js"></script>
     <script src="js/6-humburger_menu.js"></script>
     <script src="js/7-fetch.js"></script>
+    <script src="js/8-calculator.js"></script>
+    <script src="js/9-localstorage.js"></script>
 
 
 

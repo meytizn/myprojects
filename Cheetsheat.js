@@ -145,6 +145,24 @@ element.appendChild(para);
 
 
 
+// localstorage or sessionStoragh: will clear on close tab and less storage
+
+
+localStorage.setItem(" ur keyname str "," ur valuename str ")
+localStorage.getItem("ur key str")  // to print in log should be in a variable
+localStorage.removeItem("ur key str")
+localStorage.clear()
+
+
+
+
+// cookie
+
+document.cookie="fist_name=ali ; expires=Thu,22 Dec 2024 13:00:00 UTC ; path=/ "
+
+
+
+
 
 
 // form value not empty checker
